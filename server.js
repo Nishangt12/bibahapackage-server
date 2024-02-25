@@ -33,11 +33,7 @@ cloudinary.config({
 
 // Middlewares
 app.use(express.json());
-app.use(
-  cors({
-    option: '*',
-  })
-);
+app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
