@@ -25,18 +25,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please enter your password'],
     select: false,
-    // validate: {
-    //   validator: function (v) {
-    //     return validator.isStrongPassword(v, {
-    //       minLength: 8,
-    //       minLowercase: 1,
-    //       minUppercase: 1,
-    //       minNumbers: 1,
-    //     });
-    //   },
-    //   message:
-    //     'Password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, and one number',
-    // },
+    
   },
   avatar: {
     public_id: {

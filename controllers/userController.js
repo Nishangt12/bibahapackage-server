@@ -74,7 +74,7 @@ exports.verifyUser = async (req, res) => {
       });
     }
 
-    res.redirect('https://bibahapackage.netlify.app/login?verified=true');
+    res.redirect('http://localhost:3000/login?verified=true');
   } catch (error) {
     res.status(400).json({
       status: 'fail',
